@@ -13,7 +13,7 @@ CXXFLAGS     = -fPIC @OPENMP_CXXFLAGS@ -m64 -Wno-sign-compare @CXXFLAGS@
 CPUFLAGS     = -msse4 -mpopcnt
 LDFLAGS      = @OPENMP_LDFLAGS@ @LDFLAGS@
 LIBS         = @BLAS_LIBS@ @LAPACK_LIBS@ @LIBS@
-PYTHONCFLAGS = -/usr/include/python3.6/ -I@NUMPY_INCLUDE@
+PYTHONCFLAGS = -I/usr/include/python3.6/ -I@NUMPY_INCLUDE@
 
 NVCC         = @NVCC@
 NVCCLDFLAGS  = @NVCC_LDFLAGS@
