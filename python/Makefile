@@ -44,10 +44,10 @@ _swigfaiss_gpu.so: swigfaiss_gpu_wrap.o ../gpu/libgpufaiss.a ../libfaiss.a
 
 
 build: cpu
-	python3.6 setup.py build
+	$(PYTHON) setup.py build
 
 install: build
-	python3.6 setup.py install
+	$(PYTHON) setup.py install
 
 clean:
 	rm -f swigfaiss_wrap.cpp swigfaiss_gpu_wrap.cpp
