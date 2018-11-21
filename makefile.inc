@@ -115,7 +115,8 @@ SWIG = swig
 # python3 -c "import numpy ; print(numpy.get_include())"
 #
 
-PYTHONCFLAGS = -I/usr/include/python2.7/ -I/usr/lib64/python2.7/site-packages/numpy/core/include/
+PYTHON = python3.6
+PYTHONCFLAGS = -I/usr/include/python3.6/ -I/usr/local/lib/python3.6/dist-packages/numpy/core/include/
 PYTHONLIB    = -lpython
 
 ###########################################################################
@@ -125,7 +126,7 @@ PYTHONLIB    = -lpython
 
 
 # root of the cuda 8 installation
-CUDAROOT     = /usr/local/cuda-8.0
+CUDAROOT     = /usr/local/cuda-9.0
 NVCC         = $(CUDAROOT)/bin/nvcc
 NVCCLDFLAGS  = -L$(CUDAROOT)/lib64
 NVCCLIBS     = -lcudart -lcublas -lcuda
