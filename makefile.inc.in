@@ -126,7 +126,7 @@ PYTHONLIB    = -lpython
 
 
 # root of the cuda 8 installation
-CUDAROOT     = /usr/local/cuda-9.0
+CUDAROOT     = /usr/local/cuda-8.0
 NVCC         = $(CUDAROOT)/bin/nvcc
 NVCCLDFLAGS  = -L$(CUDAROOT)/lib64
 NVCCLIBS     = -lcudart -lcublas -lcuda
